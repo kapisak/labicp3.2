@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: microclimate-workspace
+spec:
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  capacity:
+    storage: 8Gi
+  nfs:
+    path: /storage/mc-workspace
+    server: 10.10.1.6
