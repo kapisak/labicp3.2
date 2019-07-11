@@ -10,4 +10,4 @@ spec:
     storage: 8Gi
   nfs:
     path: /storage/mc-jenkins
-    server: 10.10.1.6
+    server: 10.40.41.160
